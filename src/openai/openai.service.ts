@@ -20,6 +20,7 @@ export class OpenaiService {
     const response = await this.openai.createCompletion({
       model,
       prompt,
+      max_tokens: 2048,
       temperature: 0.5,
     });
 
